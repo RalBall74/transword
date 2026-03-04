@@ -1689,64 +1689,6 @@ body.dark-mode .developer-card {
     margin-bottom: 4px;
 }
 
-/* ===== Quick Prompts للمساعد الذكي ===== */
-.ai-quick-prompts {
-    position: fixed;
-    bottom: 175px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 500px;
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    z-index: 1000;
-    padding-bottom: 5px;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-.ai-quick-prompts::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for Chrome, Safari and Opera */
-}
-
-.quick-prompt-btn {
-    white-space: nowrap;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(108, 92, 231, 0.3);
-    color: var(--primary-color);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: var(--transition-fast);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.quick-prompt-btn:hover {
-    background: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(108, 92, 231, 0.2);
-}
-
-.quick-prompt-btn:active {
-    transform: scale(0.95);
-}
-
-body.dark-mode .quick-prompt-btn {
-    background: rgba(30, 41, 59, 0.8);
-    color: var(--primary-light);
-    border-color: rgba(162, 155, 254, 0.3);
-}
-
 /* ===== مودرن جلاس فوتر (المنيو اللي تحت بشكل احترافي) - نفس قرآني ===== */
 .chat-input-area {
     position: fixed;

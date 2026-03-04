@@ -45,20 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         loadCurrentChat();
         setupEventListeners();
-        setupQuickPrompts();
-    }
-
-    function setupQuickPrompts() {
-        const promptBtns = document.querySelectorAll('.quick-prompt-btn');
-        promptBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                // Get the text without the emoji
-                const text = e.target.textContent.replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]|\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDE4F]/g, '').trim();
-                aiInput.value = text;
-                sendAiBtn.disabled = false;
-                handleSend(); // Auto send
-            });
-        });
     }
 
     function setupEventListeners() {
@@ -293,12 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const speakBtn = document.createElement('button');
             speakBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
             speakBtn.title = 'نطق النص';
-            speakBtn.onclick = () => speakAIText(text, 0.9);
-
-            const slowSpeakBtn = document.createElement('button');
-            slowSpeakBtn.innerHTML = '<i class="fas fa-volume-down" style="font-size: 0.9em; opacity: 0.8;"></i>';
-            slowSpeakBtn.title = 'نطق النص ببطء للتعلم';
-            slowSpeakBtn.onclick = () => speakAIText(text, 0.5);
+            speakBtn.onclick = () => speakAIText(text);
 
             const copyBtn = document.createElement('button');
             copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
@@ -311,7 +292,6 @@ document.addEventListener('DOMContentLoaded', () => {
             shareBtn.onclick = () => shareAIText(text);
 
             actionsDiv.appendChild(speakBtn);
-            actionsDiv.appendChild(slowSpeakBtn);
             actionsDiv.appendChild(copyBtn);
             actionsDiv.appendChild(shareBtn);
             content.appendChild(actionsDiv);
@@ -369,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
         speechSynthesis.onvoiceschanged = () => availableVoices = speechSynthesis.getVoices();
     }
 
-    function speakAIText(text, rate = 0.9) {
+    function speakAIText(text) {
         if (!text.trim()) return;
         speechSynthesis.cancel();
 
@@ -420,7 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!chunk.text.trim()) return;
             const utterance = new SpeechSynthesisUtterance(chunk.text);
             utterance.lang = chunk.lang;
-            utterance.rate = rate;
+            utterance.rate = 0.9;
             utterance.pitch = 1;
 
             // اختيار صوت عالي الجودة (مثل أصوات جوجل والأونلاين)
