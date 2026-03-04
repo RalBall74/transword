@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" prefix="og: https://ogp.me/ns#">
+
+<!-- حتة جوجل لتحليل الموقع -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-72YB72VHFV"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- كلمات البحث والـ SEO -->
+    <title>TransWord | ترجمة فورية ذكية لأكثر من 50 لغة</title>
+    <meta name="title" content="TransWord - مترجم فوري ذكي ومجاني">
+    <meta name="description"
+        content="ترجم نصوصك فوراً بين أكثر من 50 لغة مع نطق صوتي ومساعد ذكي. تطبيق TransWord يوفر لك تجربة ترجمة سلسة بتصميم زجاجي عصري.">
+    <meta name="keywords"
+        content="ترجمة, مترجم, ترجمة فورية, ترجمة نصوص, ترجمة عربي انجليزي, مترجم ذكي, TransWord, translate, translation app">
+    <meta name="author" content="عاصم محمد كمال ابو النصر">
+    <link rel="canonical" href="https://ralball74.github.io/transword/">
+
+    <!-- حوارات السوشيال ميديا وصورة اللينك (WhatsApp, TikTok, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ralball74.github.io/transword/">
+    <meta property="og:site_name" content="TransWord">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:title" content="TransWord - مترجمك الذكي">
+    <meta property="og:description"
+        content="ترجم نصوصك لأكثر من 50 لغة بسرعة فائقة مع نطق صوتي ومساعد ذكي بالذكاء الاصطناعي. تجربة ترجمة فريدة بتصميم زجاجي عصري.">
+    <meta property="og:image" content="https://ralball74.github.io/transword/images/icon-512x512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="لوجو تطبيق TransWord">
+
+    <!-- تويتر (X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TransWord - مترجم فوري ذكي">
+    <meta name="twitter:description" content="ترجم نصوصك لأكثر من 50 لغة مع نطق صوتي ومساعد ذكي بالذكاء الاصطناعي.">
+    <meta name="twitter:image" content="https://ralball74.github.io/transword/images/icon-512x512.png">
+
+    <!-- تنسيقات إضافية -->
+    <meta name="theme-color" content="#6c5ce7">
+    <meta name="apple-mobile-web-app-title" content="TransWord">
+    <meta name="application-name" content="TransWord">
+
+    <!-- واتساب وأبل -->
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
+
+    <!-- بيانات منظمة لجوجل -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "TransWord",
+      "url": "https://ralball74.github.io/transword/",
+      "description": "تطبيق ترجمة ذكي وسريع يدعم أكثر من 50 لغة مع مساعد ذكي بالذكاء الاصطناعي.",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "author": {
+        "@type": "Person",
+        "name": "عاصم محمد كمال ابو النصر"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="others/style.css">
+    <!-- خطوط جوجل -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600&family=Tajawal:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="manifest" href="others/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="light-mode">
+    <!-- خلفية متدرجة متحركة (Mesh Gradient) -->
+    <div class="mesh-gradient-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- اللوجو فوق -->
+        <header class="top-header">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="images/icon-512x512.png" alt="لوجو تطبيق TransWord" class="logo-img">
+                    <h1>TransWord</h1>
+                </div>
+                <div class="user-actions">
+                    <div class="theme-toggle" style="display: inline-block; vertical-align: middle;">
+                        <input type="checkbox" id="theme-switch" />
+                        <label for="theme-switch" class="switch-label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- تنبيه لو مفيش نت -->
+        <div id="offline-banner" class="offline-banner" style="display: none;">
+            <i class="fas fa-wifi-slash"></i>
+            <span>لا يوجد اتصال بالإنترنت - الترجمة تحتاج للاتصال</span>
+        </div>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="main-content">
+            <!-- ===== قسم الترجمة (الرئيسية) ===== -->
+            <section id="translate-section" class="content-scroll translate-section page-animate">
+                <div class="section-header">
+                    <h2>يلا نترجم..</h2>
+                </div>
+
+                <!-- اختيار اللغات -->
+                <div class="lang-selectors">
+                    <button class="lang-btn" id="source-lang-btn">
+                        <span class="lang-flag" id="source-flag">🇸🇦</span>
+                        <span class="lang-name" id="source-lang-name">العربية</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <button class="swap-btn" id="swap-btn" title="تبديل اللغات">
+                        <i class="fas fa-exchange-alt"></i>
+                    </button>
+
+                    <button class="lang-btn" id="target-lang-btn">
+                        <span class="lang-flag" id="target-flag">🇬🇧</span>
+                        <span class="lang-name" id="target-lang-name">الإنجليزية</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- منطقة الإدخال -->
+                <div class="input-area">
+                    <textarea id="source-text" placeholder="اكتب أو انسخ النص اللي عايز تترجمه هنا..."
+                        rows="5"></textarea>
+                    <div class="input-actions">
+                        <span class="char-count" id="char-count">0 / 500</span>
+                        <button id="speak-source-btn" title="نطق النص"><i class="fas fa-volume-up"></i></button>
+                        <button id="copy-source-btn" title="نسخ النص"><i class="fas fa-copy"></i></button>
+                        <button id="clear-source-btn" title="مسح النص"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+
+                <!-- زر الترجمة -->
+                <button class="translate-btn" id="translate-btn">
+                    <span class="btn-text"><i class="fas fa-language"></i> ترجم</span>
+                    <div class="btn-loader"></div>
+                </button>
+
+                <!-- كارت النتيجة -->
+                <div class="result-card" id="result-card">
+                    <div class="result-header">
+                        <div class="result-lang-info">
+                            <span class="lang-flag" id="result-flag">🇬🇧</span>
+                            <span id="result-lang-label">الإنجليزية</span>
+                        </div>
+                    </div>
+                    <p class="result-text" id="result-text"></p>
+                    <div class="result-actions">
+                        <button id="speak-result-btn" title="نطق الترجمة"><i class="fas fa-volume-up"></i></button>
+                        <button id="copy-result-btn" title="نسخ الترجمة"><i class="fas fa-copy"></i></button>
+                        <button id="fav-result-btn" title="إضافة للمفضلة"><i class="far fa-heart"></i></button>
+                        <button id="share-result-btn" title="مشاركة"><i class="fas fa-share-alt"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== قسم التاريخ ===== -->
+            <section id="history-section" class="content-scroll history-view page-animate" style="display: none;">
+                <div class="section-header">
+                    <h2>اللي ترجمناه قبل كده</h2>
+                </div>
+
+                <div class="history-tabs">
+                    <button class="history-tab-btn active" data-filter="all">الكل</button>
+                    <button class="history-tab-btn" data-filter="favorites">المفضلة</button>
+                </div>
+
+                <div class="history-actions-bar" id="history-actions-bar">
+                    <button class="clear-history-btn" id="clear-history-btn">
+                        <i class="fas fa-trash-alt"></i> مسح الكل
+                    </button>
+                </div>
+
+                <div id="history-list" class="history-list">
+                    <!-- الترجمات السابقة هتظهر هنا بالـ JS -->
+                </div>
+            </section>
+
+            <!-- ===== المساعد الذكي ===== -->
+            <section id="ai-section" class="ai-view page-animate" style="display: none;">
+                <div class="ai-header"
+                    style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 1px solid rgba(127, 140, 141, 0.1); margin-bottom: 15px;">
+                    <button class="ai-header-btn" id="ai-history-btn" title="الرجوع لمحادثات سابقة"><i
+                            class="fas fa-history"></i></button>
+                    <div style="text-align: center;">
+                        <h2>مساعدك الشخصي</h2>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">اسألني عن أي حاجة</p>
+                    </div>
+                    <button class="ai-header-btn" id="new-ai-chat-btn" title="محادثة جديدة"><i
+                            class="fas fa-plus"></i></button>
+                </div>
+                <div id="chat-container" class="chat-container">
+                    <div class="message ai-message">
+                        <div class="message-avatar">
+                            <div class="modern-ai-icon-container">
+                                <div class="ai-icon-glow"></div>
+                                <div class="ai-icon-sparkle"></div>
+                            </div>
+                        </div>
+                        <div class="message-content">أهلاً بيك! أنا مساعدك هنا في TransWord.. اسألني عن أي حاجة تخص
+                            اللغات والترجمة وهرد عليك فوراً. ✨</div>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <div class="chat-input-wrapper">
+                        <input type="text" id="ai-input" placeholder="اكتب سؤالك هنا..." autocomplete="off">
+                    </div>
+                    <button id="send-ai-btn" disabled><i class="fas fa-arrow-left"></i></button>
+                </div>
+            </section>
+
+            <!-- ===== أخرى ===== -->
+            <section id="others-section" class="content-scroll others-view page-animate" style="display: none;">
+                <div class="section-header">
+                    <h2>أخرى</h2>
+                </div>
+                <div class="others-grid">
+                    <div class="other-card" id="about-dev-btn">
+                        <div class="other-icon"><i class="fas fa-user-tie"></i></div>
+                        <div class="other-info">
+                            <h3>عن المطور</h3>
+                            <p>معلومات عن مبرمج التطبيق</p>
+                        </div>
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+
+                    <div class="other-card" id="app-info-btn">
+                        <div class="other-icon"><i class="fas fa-info-circle"></i></div>
+                        <div class="other-info">
+                            <h3>عن التطبيق</h3>
+                            <p>معلومات عن TransWord</p>
+                        </div>
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== عن المطور ===== -->
+            <section id="about-view" class="others-subview page-animate" style="display: none;">
+                <div class="view-header">
+                    <button class="back-btn" id="about-back"><i class="fas fa-arrow-right"></i></button>
+                    <h2>عن المطور</h2>
+                </div>
+                <div class="developer-card">
+                    <div class="dev-header">
+                        <img src="images/me.png" alt="عاصم محمد كمال">
+                        <div class="dev-name">
+                            <h3>عاصم م ابو النصر</h3>
+                            <p>مبرمج و مطور واجهات أمامية</p>
+                        </div>
+                    </div>
+                    <div class="dev-info">
+                        <a href="https://portfolio-for-assem.netlify.app" target="_blank" class="portfolio-link">
+                            <i class="fas fa-external-link-alt"></i> الموقع الشخصي
+                        </a>
+                    </div>
+                    <div class="dev-rights">
+                        <p>جميع الحقوق محفوظة لشركة تدفق &copy;</p>
+                        <p>برمجة وتصميم: عاصم محمد</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== عن التطبيق ===== -->
+            <section id="app-info-view" class="others-subview page-animate" style="display: none;">
+                <div class="view-header">
+                    <button class="back-btn" id="app-info-back"><i class="fas fa-arrow-right"></i></button>
+                    <h2>TransWord</h2>
+                </div>
+                <div class="developer-card">
+                    <div class="dev-header">
+                        <img src="images/icon-512x512.png" alt="TransWord" style="border-radius: 16px;">
+                        <div class="dev-name">
+                            <h3>TransWord</h3>
+                            <p>الإصدار التجريبي 1.0.0</p>
+                        </div>
+                    </div>
+                    <div style="padding: 1rem 0; line-height: 1.8; font-size: 0.9rem; color: var(--text-muted);">
+                        <p>تطبيق ترجمة ذكي وسريع يدعم أكثر من 50 لغة.
+                            تجربة ترجمة فريدة ومريحة.</p>
+                        <br>
+                        <p><strong>المميزات:</strong></p>
+                        <p>• ترجمة فورية لأكثر من 50 لغة</p>
+                        <p>• نطق صوتي للنصوص</p>
+                        <p>• مساعد ذكي بالذكاء الاصطناعي</p>
+                        <p>• حفظ التاريخ والمفضلة</p>
+                        <p>• يعمل بدون إنترنت (PWA)</p>
+                        <p>• تصميم زجاجي عصري</p>
+                    </div>
+                    <div class="dev-rights">
+                        <p>جميع الحقوق محفوظة لشركة تدفق &copy;</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- المنيو تحت -->
+        <nav class="sidebar">
+            <div class="nav-menu">
+                <button class="nav-item active" data-target="translate">
+                    <i class="fas fa-globe-africa"></i>
+                    <span>الترجمة</span>
+                </button>
+                <button class="nav-item" data-target="history">
+                    <i class="fas fa-history"></i>
+                    <span>تاريخك</span>
+                </button>
+                <button class="nav-item" data-target="ai">
+                    <div class="modern-ai-icon-container">
+                        <div class="ai-icon-glow"></div>
+                        <div class="ai-icon-sparkle"></div>
+                    </div>
+                    <span>المساعد</span>
+                </button>
+                <button class="nav-item" data-target="others">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <span>أخرى</span>
+                </button>
+            </div>
+            <div class="app-copyright">Tadfuq Company ©</div>
+        </nav>
+    </div>
+
+    <!-- بانر تثبيت التطبيق PWA -->
+    <div id="pwa-install-banner" class="pwa-install-banner" style="display:none;">
+        <div class="pwa-install-content">
+            <div class="pwa-icon-wrap">
+                <img src="images/icon-512x512.png" alt="أيقونة TransWord" class="pwa-app-icon">
+            </div>
+            <div class="pwa-text">
+                <h3>ثبّت TransWord</h3>
+                <p>استمتع بتجربة أفضل وترجم حتى بدون إنترنت</p>
+            </div>
+            <div class="pwa-actions">
+                <button id="pwa-install-btn" class="pwa-btn-install">
+                    <i class="fas fa-download"></i>
+                    تثبيت
+                </button>
+                <button id="pwa-dismiss-btn" class="pwa-btn-dismiss">
+                    لاحقاً
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- مودال اختيار اللغة -->
+    <div id="lang-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="lang-modal-title">اختر اللغة</h3>
+                <button id="close-lang-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <input type="text" class="lang-search" id="lang-search" placeholder="ابحث عن لغة...">
+            <div class="lang-list" id="lang-list">
+                <!-- اللغات هتظهر هنا بالـ JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- مودال سجل المساعد -->
+    <div id="ai-history-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="ai-history-title">المحادثات السابقة</h3>
+                <button id="close-ai-history-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="ai-history-list" id="ai-history-list">
+                <!-- سجل المساعد هيظهر هنا -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="js/languages.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ai-service.js"></script>
+    <script>
+        // تسجيل الـ Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').then(reg => {
+                    // التشكيك في تحديث الـ SW
+                    reg.update();
+                });
+            });
+
+            // ري لود لو فيه تغيير
+            let refreshing = false;
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                if (!refreshing) {
+                    window.location.reload();
+                    refreshing = true;
+                }
+            });
+        }
+
+        // لوجيك تثبيت الـ PWA
+        let deferredPrompt;
+        const pwaInstallBanner = document.getElementById('pwa-install-banner');
+        const pwaInstallBtn = document.getElementById('pwa-install-btn');
+        const pwaDismissBtn = document.getElementById('pwa-dismiss-btn');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+
+            // أظهر البانر لو مكنش مغلق
+            const dismissed = localStorage.getItem('pwa-install-dismissed');
+            if (!dismissed) {
+                setTimeout(() => {
+                    pwaInstallBanner.style.display = 'flex';
+                    requestAnimationFrame(() => {
+                        pwaInstallBanner.classList.add('visible');
+                    });
+                }, 2000);
+            }
+        });
+
+        pwaInstallBtn && pwaInstallBtn.addEventListener('click', async () => {
+            if (!deferredPrompt) return;
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            deferredPrompt = null;
+            pwaInstallBanner.classList.remove('visible');
+            setTimeout(() => { pwaInstallBanner.style.display = 'none'; }, 400);
+        });
+
+        pwaDismissBtn && pwaDismissBtn.addEventListener('click', () => {
+            localStorage.setItem('pwa-install-dismissed', '1');
+            pwaInstallBanner.classList.remove('visible');
+            setTimeout(() => { pwaInstallBanner.style.display = 'none'; }, 400);
+        });
+
+        // اخفيه عند التثبيت
+        window.addEventListener('appinstalled', () => {
+            pwaInstallBanner.classList.remove('visible');
+            setTimeout(() => { pwaInstallBanner.style.display = 'none'; }, 400);
+            deferredPrompt = null;
+        });
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,30 @@
+{
+    "name": "TransWord",
+    "short_name": "TransWord",
+    "description": "تطبيق ترجمة ذكي وسريع يدعم أكثر من 50 لغة مع مساعد ذكي",
+    "start_url": "../index.html",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#6c5ce7",
+    "lang": "ar",
+    "dir": "rtl",
+    "categories": [
+        "productivity",
+        "utilities"
+    ],
+    "icons": [
+        {
+            "src": "../images/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "../images/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
