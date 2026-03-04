@@ -2,7 +2,7 @@
 // كل لغة ليها: كود، اسم عربي، اسم انجليزي، علم emoji، اتجاه النص
 const languagesData = [
     { code: "ar", nameAr: "العربية", nameEn: "Arabic", flag: "🇸🇦", dir: "rtl" },
-    { code: "en", nameAr: "الإنجليزية", nameEn: "English", flag: "En", dir: "ltr" },
+    { code: "en", nameAr: "الإنجليزية", nameEn: "English", flag: "🇬🇧", dir: "ltr" },
     { code: "fr", nameAr: "الفرنسية", nameEn: "French", flag: "🇫🇷", dir: "ltr" },
     { code: "es", nameAr: "الإسبانية", nameEn: "Spanish", flag: "🇪🇸", dir: "ltr" },
     { code: "de", nameAr: "الألمانية", nameEn: "German", flag: "🇩🇪", dir: "ltr" },
@@ -27,7 +27,7 @@ const languagesData = [
     { code: "th", nameAr: "التايلاندية", nameEn: "Thai", flag: "🇹🇭", dir: "ltr" },
     { code: "vi", nameAr: "الفيتنامية", nameEn: "Vietnamese", flag: "🇻🇳", dir: "ltr" },
     { code: "fa", nameAr: "الفارسية", nameEn: "Persian", flag: "🇮🇷", dir: "rtl" },
-    { code: "he", nameAr: "العبرية", nameEn: "Hebrew", flag: "🇮🇱", dir: "rtl" },
+    { code: "he", nameAr: "العبرية", nameEn: "Hebrew", flag: "🇵🇱", dir: "rtl" },
     { code: "ms", nameAr: "الماليزية", nameEn: "Malay", flag: "🇲🇾", dir: "ltr" },
     { code: "bn", nameAr: "البنغالية", nameEn: "Bengali", flag: "🇧🇩", dir: "ltr" },
     { code: "da", nameAr: "الدانماركية", nameEn: "Danish", flag: "🇩🇰", dir: "ltr" },
