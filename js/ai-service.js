@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    const _k1 = ["Sy", "Bbiw4", "AIza", "uevwec"];
+    const _k1 = ["Sy", "BI3a0PqqcY", "AIza", "LcEz"];
     const _k2 = {
-        part: "LgdK9oVb0I1mzPkU",
-        extra: "FZU1yU"
+        part: "QVuY4kP3uMI",
+        extra: "-8xmHGrH"
     };
 
     function _initSecureKey() {
