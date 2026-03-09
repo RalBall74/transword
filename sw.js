@@ -9,7 +9,7 @@ const CORE_ASSETS = [
     './js/ai-service.js',
     './others/manifest.json',
     './images/icon-192x192.png',
-    './images/icon-512x512.png'
+    './images/icon-512x512.jpg'
 ];
 
 self.addEventListener("install", event => {
